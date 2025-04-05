@@ -1,0 +1,35 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; /* Set default text color to white */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Override Material UI TextField styles */
+.MuiTextField-root {
+  background-color: #f0f0f0; /* Light background */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.MuiOutlinedInput-root {
+  fieldset {
+    border-color: #888 !important; /* Muted border color */
+  }
+  &:hover fieldset {
+    border-color: #555 !important;
+  }
+  &.Mui-focused fieldset {
+    border-color: #333 !important;
+  }
+}
+
+.MuiInputBase-input {
+  color: #333 !important; /* Dark text color */
+}
